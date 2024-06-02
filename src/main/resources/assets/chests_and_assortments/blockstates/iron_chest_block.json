@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chests_and_assortments:block/iron_chest_block"
+    }
+  }
+}

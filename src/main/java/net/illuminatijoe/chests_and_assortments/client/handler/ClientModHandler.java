@@ -2,6 +2,7 @@ package net.illuminatijoe.chests_and_assortments.client.handler;
 
 import net.illuminatijoe.chests_and_assortments.ChestsAndAssortments;
 import net.illuminatijoe.chests_and_assortments.client.screen.CopperChestScreen;
+import net.illuminatijoe.chests_and_assortments.client.screen.IronChestScreen;
 import net.illuminatijoe.chests_and_assortments.init.MenuInit;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
@@ -15,6 +16,7 @@ public class ClientModHandler {
     public static void clientSetup(FMLClientSetupEvent event){
         event.enqueueWork(() ->{
             MenuScreens.register(MenuInit.COPPER_CHEST_MENU.get(), CopperChestScreen::new);
+            MenuScreens.register(MenuInit.IRON_CHEST_MENU.get(), IronChestScreen::new);
         });
     }
 }

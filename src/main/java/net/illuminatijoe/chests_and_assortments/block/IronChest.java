@@ -6,17 +6,15 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
 
-public class CopperChest extends AbstractChest {
+public class IronChest extends AbstractChest{
 
-    //constructor
-    public CopperChest(Properties pProperties) {
+    public IronChest(Properties pProperties) {
         super(pProperties);
     }
 
-    @Nullable
     @Override
-    // creates the entity
-    public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return BlockEntityInit.COPPER_CHEST_ENTITY.get().create(blockPos, blockState);
+    public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
+        return BlockEntityInit.IRON_CHEST_ENTITY.get().create(blockPos, blockState);
     }
+
 }

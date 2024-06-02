@@ -15,4 +15,8 @@ public class ItemInit {
     public static final RegistryObject<BlockItem> COPPER_CHEST_ENTITY_ITEM = addToTab(ITEMS.register("copper_chest_item",
             () -> new BlockItem(BlockInit.COPPER_CHEST_ENTITY_BLOCK.get(), new Item.Properties())
             ));
+
+    public static final RegistryObject<BlockItem> IRON_CHEST_ENTITY_ITEM = addToTab(ITEMS.register("iron_chest_item",
+            () -> new BlockItem(BlockInit.IRON_CHEST_ENTITY_BLOCK.get(), new Item.Properties())
+    ));
 }

@@ -1,11 +1,17 @@
 {
   "item.chests_and_assortments.copper_chest_item": "Copper Chest",
+  "item.chests_and_assortments.iron_chest_item": "Iron Chest",
 
   "block.chests_and_assortments.copper_chest_block": "Copper Chest",
+  "block.chests_and_assortments.iron_chest_block": "Iron Chest",
 
   "entity.chests_and_assortments.copper_chest_block_entity": "Copper Chest",
+  "entity.chests_and_assortments.iron_chest_block_entity": "Iron Chest",
+
 
   "itemGroup.chests_and_assortments_tab": "Chests and Assortments",
 
-  "chests_and_assortments.copper_chest": "Copper Chest"
+  "chests_and_assortments.copper_chest": "Copper Chest",
+  "chests_and_assortments.iron_chest": "Iron Chest"
+
 }

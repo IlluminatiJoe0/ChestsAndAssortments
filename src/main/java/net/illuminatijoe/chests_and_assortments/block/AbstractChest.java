@@ -1,7 +1,7 @@
 package net.illuminatijoe.chests_and_assortments.block;
 
 import net.illuminatijoe.chests_and_assortments.DropHelper;
-import net.illuminatijoe.chests_and_assortments.block.entity.CopperChestEntity;
+import net.illuminatijoe.chests_and_assortments.block.entity.AbstractChestEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;
@@ -60,9 +60,9 @@ public abstract class AbstractChest extends HorizontalDirectionalBlock implement
             return InteractionResult.SUCCESS;
         }
         BlockEntity be = pLevel.getBlockEntity(pPos);
-        if(be instanceof CopperChestEntity){
+        if(be instanceof AbstractChestEntity){
             ServerPlayer sPlayer = (ServerPlayer) pPlayer;
-            CopperChestEntity copperChestEntity = (CopperChestEntity) be;
+            AbstractChestEntity copperChestEntity = (AbstractChestEntity) be;
             NetworkHooks.openScreen(sPlayer, copperChestEntity, pPos);
         }
         return InteractionResult.CONSUME;

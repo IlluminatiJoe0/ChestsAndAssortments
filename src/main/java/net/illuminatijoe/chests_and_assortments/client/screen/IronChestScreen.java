@@ -1,26 +1,24 @@
 package net.illuminatijoe.chests_and_assortments.client.screen;
 
 import net.illuminatijoe.chests_and_assortments.ChestsAndAssortments;
-import net.illuminatijoe.chests_and_assortments.menu.CopperChestMenu;
+import net.illuminatijoe.chests_and_assortments.menu.IronChestMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
-public class CopperChestScreen extends AbstractContainerScreen<CopperChestMenu> {
+public class IronChestScreen extends AbstractContainerScreen<IronChestMenu> {
 
-    private static final ResourceLocation TEXTURE = new ResourceLocation(ChestsAndAssortments.MODID, "textures/gui/copper_chest.png");
-//    private static final int inventoryLabelX = 7;
-//    private static final int inventoryLabelY = 108;
+    private static final ResourceLocation TEXTURE = new ResourceLocation(ChestsAndAssortments.MODID, "textures/gui/iron_chest.png");
 
-    public CopperChestScreen(CopperChestMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
+    public IronChestScreen(IronChestMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);
 
-        this.imageHeight = 203;
+        this.imageHeight = 239; //TODO: fix inventory rendering
         this.imageWidth = 176;
         this.inventoryLabelX = 7;
-        this.inventoryLabelY = 110;
+        this.inventoryLabelY = 146;
     }
 
     @Override

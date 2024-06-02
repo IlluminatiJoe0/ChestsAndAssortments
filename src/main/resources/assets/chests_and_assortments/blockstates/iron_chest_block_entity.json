@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chests_and_assortments:block/iron_chest_block"
+    },
+    "facing=east": {
+      "model": "chests_and_assortments:block/iron_chest_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chests_and_assortments:block/iron_chest_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chests_and_assortments:block/iron_chest_block",
+      "y": 240
+    }
+  }
+}
